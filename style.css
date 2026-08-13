@@ -266,7 +266,9 @@ button {
 }
 
 .content {
-  padding: 24px 28px 40px;
+  padding: 24px 28px 55px;
+  min-height: calc(100vh - 83px);
+  overflow-y: auto;
 }
 
 .page-section {
@@ -1000,24 +1002,42 @@ blockquote {
 }
 
 .site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 25;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 24px 28px 40px;
+  gap: 12px;
+  padding: 10px 20px 16px;
   background: #0d2943;
   color: #eaf5f9;
+  font-size: 0.85rem;
+}
+
+.site-footer h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.8rem;
 }
 
 .site-footer nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
 
 .site-footer a {
   color: rgba(234, 245, 249, 0.8);
+  font-size: 0.85rem;
 }
 
 @keyframes fadeInUp {

@@ -548,6 +548,27 @@ button {
   gap: 20px;
 }
 
+.coordinator-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  overflow: hidden;
+}
+
+.coordinator-photo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 76, 129, 0.12);
+  box-shadow: 0 12px 24px rgba(15, 76, 129, 0.1);
+  background: #edf6ff;
+}
+
 .tag-grid {
   display: flex;
   flex-wrap: wrap;
